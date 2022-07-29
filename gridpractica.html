@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica grid owo</title>
+</head>
+<style>
+    .contenedor {
+        display: grid;
+        width: 200px;
+        height: 200px;
+        background-color: DarkSalmon;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    #dif, #fid {
+        background-color: yellowgreen;
+    }
+
+    .items {
+        background-color: black;
+    }
+
+    .contenedor .items:nth-child(1) {
+        grid-column: 2 / 3;
+        grid-row: 4 / 5;
+    }
+
+    .contenedor .items:nth-child(2) {
+        grid-column: 4 / 5;
+        grid-row: 2 / 3;
+    }
+
+    .contenedor .items:nth-child(3) {
+        grid-column: 3 / 4;
+        grid-row: 4 / 5;
+    }
+
+    .contenedor .items:nth-child(4) {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .contenedor #dif:nth-child(5) {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+    
+    .contenedor #fid:nth-child(6) {
+        grid-column: 4 / 3;
+        grid-row: 1 / 2;
+    }
+</style>
+<body>
+    <div class="contenedor">
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div id="dif"></div>
+        <div id="fid"></div>
+    </div>
+</body>
+</html>
