@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Una página truste</title>
+    <script src="https://kit.fontawesome.com/87a7a36405.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700&family=Cabin:ital@1&display=swap');
+        
+        body{
+            margin: 0%;
+            font-family: 'Assistant', sans-serif;
+        }
+
+        nav{
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 50px;
+            align-items: center;
+        }
+
+        nav p {
+            font-size: 25px;
+        }
+
+        button {
+            border-radius: 20px;
+            background-color: DodgerBlue;
+            color: snow;
+            border: none;
+            width: 120px;
+            height: 40px;
+            font-weight: bolder;
+        }
+
+        button:hover {
+            background-color: RoyalBlue;
+        }
+
+        .contenedor {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 50px;
+        }
+
+        .imagen {
+            display: flex;
+            width: 250px;
+            height: 250px;
+            justify-content: center;
+        }
+
+        .textito {
+            width: 600px;
+            height: 40px;
+            border-radius: 20px;
+            background-color: snow;
+            border: solid 0.4px grey;
+        }
+
+        ::placeholder {
+            color: darkcyan;
+        }
+
+        #btmenviar {
+            border-radius: 20px;
+            border: none;
+            background-color: dodgerblue;
+            height: 40px;
+            width: 80px;
+            color: white;
+            font-weight: bold;
+        }
+
+        #btmenviar:hover {
+            background-color: royalblue;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 60px;
+            align-items: center;
+            font-size: 17px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <p>Hanael</p>
+        <button>Registrate</button>
+    </nav>
+
+    <div class="contenedor">
+        <div class="titulo">
+            <h1>Jotaro Kujo</h1>
+            <ul>
+                <li>Alto</li>
+                <li>Pelinegro</li>
+                <li>Fuerte</li>
+                <li>No existe</li>
+            </ul>
+        </div>
+        <div class="imagen">
+            <img src="https://areajugones.sport.es/wp-content/uploads/2021/10/jotaro-jojo-1080x609.jpg" alt="jotaro">
+        </div>
+    </div>
+
+
+    <div class="contenedorINPUT">
+        <center>
+            <h2>Registrate</h2>
+            <input class="textito" placeholder="Ingresa tu correo electronico" type="email"> 
+            <input type="submit" name="Registrate" id="btmenviar">
+        </center>
+    </div>
+
+    <footer>
+        <div class="mensaje">
+            <p>Hecho con mucho amor, Hanael...</p>
+        </div>
+
+        <div class="social">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+    </footer>
+</body>
+</html>
